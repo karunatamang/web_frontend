@@ -15,7 +15,6 @@ class ContactUsForm extends Component {
             { [e.target.name]: e.target.value }
         )
     }
-
     addContact = () => {
         const data = {
             name: this.state.name,
