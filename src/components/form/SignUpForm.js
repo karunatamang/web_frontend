@@ -14,11 +14,13 @@ class SignUpForm extends Component {
         isRegistered: false
     }
 
+
     handleChange = (e) => {
         this.setState(
             { [e.target.name]: e.target.value }
         )
     }
+
 
     signUp = () => {
         const data = {
@@ -53,7 +55,7 @@ class SignUpForm extends Component {
                     <h1>Sign Up</h1>
                     <fieldset>
                         <legend><span class="number">1</span>Your basic info</legend>
-                        <label for="name">Name:</label>
+                        <label for="name">Full Name:</label>
                         <input type="text" name="fullname" value={this.state.fullname}
                             onChange={this.handleChange} required />
 
@@ -69,7 +71,7 @@ class SignUpForm extends Component {
                         <input type="text" name="address" value={this.state.address}
                             onChange={this.handleChange} required />
 
-                        <label for="phonenumber">Mobile Number:</label>
+                        <label for="phonenumber">Phone Number:</label>
                         <input type="text" name="phonenumber" value={this.state.phonenumber}
                             onChange={this.handleChange} required />
                     </fieldset>
