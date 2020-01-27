@@ -12,7 +12,7 @@ export default class Header extends Component {
                     <NavLink to="/adddonation">Add Donation</NavLink>
                     <NavLink to="/viewdonation">View Donation</NavLink>
                     <NavLink to="/addcontactus">Contact Us</NavLink>
-                    <NavLink to="/viewcontactus">View Contact US</NavLink>
+                    {/* <NavLink to="/viewcontactus">View Contact US</NavLink> */}
                 </div>
             </div>
         )
