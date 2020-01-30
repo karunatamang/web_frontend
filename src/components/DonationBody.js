@@ -6,7 +6,7 @@ class DonationBody extends Component {
 
     deleteData = () => {
         axios.delete('http://localhost:8080/donation/' + this.props.id);
-        alert('Deleted Successfully');
+        alert('Delete Successfully');
         window.location.reload(false);
     }
     render() {
@@ -19,7 +19,7 @@ class DonationBody extends Component {
                 <p>{this.props.noofcloth} </p>
 
                 <NavLink to={"/editdonation/" + this.props.id}>Edit</NavLink>
-                <NavLink to={"/singledonation/" + this.props.id}>View Info</NavLink>
+                <NavLink to={"/singledonation/" + this.props.id}>View Information</NavLink>
                 <button onClick={this.deleteData}>Delete</button>
 
             </div>
