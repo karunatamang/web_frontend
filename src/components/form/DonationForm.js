@@ -59,15 +59,15 @@ class DonationForm extends Component {
                         <input type="number" name="contactnumber" value={this.state.contactnumber}
                             onChange={this.handleChange} required />
 
-                        <label for="pickupaddress">pickupaddress:</label>
+                        <label for="pickupaddress">Pick up Address:</label>
                         <input type="text" name="pickupaddress" value={this.state.pickupaddress}
                             onChange={this.handleChange} required />
 
-                        <label for="pickuptime">pickuptime:</label>
+                        <label for="pickuptime">Pick up Time:</label>
                         <input type="text" name="pickuptime" value={this.state.pickuptime}
                             onChange={this.handleChange} required />
 
-                        <label for="noofcloth">noofcloth:</label>
+                        <label for="noofcloth">No of Cloth:</label>
                         <input type="number" name="noofcloth" value={this.state.noofcloth}
                             onChange={this.handleChange} required />
 
