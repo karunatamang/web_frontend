@@ -15,7 +15,7 @@ class ViewDonation extends Component {
     }
 
     render() {
-        const listData11 = this.state.listData.map(donationList => {
+        const listData123 = this.state.listData.map(donationList => {
             return <DonationBody donorname={donationList.donorname} contactnumber={donationList.contactnumber}
                 pickupaddress={donationList.pickupaddress} pickuptime={donationList.pickuptime}
                 noofcloth={donationList.noofcloth} id={donationList._id} />
@@ -23,7 +23,7 @@ class ViewDonation extends Component {
 
         return (
             <div>
-                {listData11}
+                {listData123}
             </div>
         )
     }
