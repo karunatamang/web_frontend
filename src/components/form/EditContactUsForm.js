@@ -63,7 +63,7 @@ class EditContactUsForm extends Component {
                         <input type="number" name="email" value={this.state.email}
                             onChange={this.handleChange} required />
 
-                        <label for="message">message:</label>
+                        <label for="message">Message:</label>
                         <input type="text" name="message" value={this.state.message}
                             onChange={this.handleChange} required />
 
