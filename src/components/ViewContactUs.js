@@ -15,14 +15,14 @@ class ViewContactUs extends Component {
     }
 
     render() {
-        const listData11 = this.state.listData.map(contactusList => {
+        const listData123 = this.state.listData.map(contactusList => {
             return <ContactUsBody name={contactusList.name} email={contactusList.email}
                 message={contactusList.message} id={contactusList._id} />
         });
 
         return (
             <div>
-                {listData11}
+                {listData123}
             </div>
         )
     }
