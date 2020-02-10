@@ -6,7 +6,7 @@ class ContactUsBody extends Component {
 
     deleteData = () => {
         axios.delete('http://localhost:8080/contactus/' + this.props.id);
-        alert('Deleted Successfully');
+        alert('Delete Successfully');
         window.location.reload(false);
     }
     render() {
@@ -18,7 +18,6 @@ class ContactUsBody extends Component {
     
                 <NavLink to={"/editcontactus/" + this.props.id}>Edit</NavLink>
                 <button onClick={this.deleteData}>Delete</button>
-
             </div>
         )
     }
