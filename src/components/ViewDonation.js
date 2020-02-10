@@ -7,7 +7,6 @@ class ViewDonation extends Component {
     state = {
         listData: []
     }
-
     componentDidMount() {
         axios.get("http://localhost:8080/donation").then(res => {
             this.setState({ listData: res.data });
@@ -15,7 +14,7 @@ class ViewDonation extends Component {
     }
 
     render() {
-        const listData123 = this.state.listData.map(donationList => {
+        const list = this.state.listData.map(donationList => {
             return <DonationBody donorname={donationList.donorname} contactnumber={donationList.contactnumber}
                 pickupaddress={donationList.pickupaddress} pickuptime={donationList.pickuptime}
                 noofcloth={donationList.noofcloth} id={donationList._id} />
@@ -23,7 +22,7 @@ class ViewDonation extends Component {
 
         return (
             <div>
-                {listData123}
+                {list}
             </div>
         )
     }
