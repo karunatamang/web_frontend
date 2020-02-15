@@ -11,6 +11,7 @@ import SingleDonation from './components/SingleDonation';
 import ViewContactUs from './components/ViewContactUs';
 import ContactUsForm from './components/form/ContactUsForm';
 import EditContactUsForm from './components/form/EditContactUsForm';
+import Loginform from './components/form/Login';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <header>
           <Header />
           <Switch>
-          
+          <Route path="/login" component={Loginform}/>
             <Route path="/signup" component={SignUpForm} />
             <Route path="/adddonation" component={DonationForm} />
             <Route path="/viewdonation" component={ViewDonation} />
